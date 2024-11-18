@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    font-family: 'Arial', 'sans-serif';
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/*tema claro*/
+body.light{
+    background-color: white;
+    color: black;
+}
+
+/*tem escuro*/
+body.dark{
+    background-color: black;
+    color: white;
+}
+
+/*menu de navegação*/
+.menu{
+    background-color: lightskyblue;
+    padding: 10px;
+    text-align: center;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+.menu a:hover{
+    color: rgb(114, 0, 220);
+}
+
+/*botao*/
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+body.light .menu{
+    background-color: lightskyblue;
+}
+
+body.light .menu a:hover{
+    color: lightskyblue;
+}
+
+body.dark .menu{
+    background-color: rgb(114, 0, 220);    
+}
+
+body.dark .menu a:hover{
+    color: black;
+}
+
+body.light button{
+    background-color: lightskyblue;
+    color: white;
+    box-shadow: 0 4px 6px black;
+}
+
+body.light button:hover{
+    background-color: cyan;
+}
+
+body.dark button{
+    background-color: rgb(114, 0, 220);
+    color: black;
+    box-shadow: 0 4px 6px rgb(37, 0, 71);
+}
+
+body.dark button:hover{
+    background-color: rgb(132, 0, 255);
+}
+
+.container{
+    text-align: center;
+    margin-top: 20%;
+}
